@@ -1,7 +1,4 @@
-console.log('\- Welcome to the \"Mixed Messages\" Project');
-
-console.log('\- Welcome to the \"Mixed Messages\" Project');
- 
+console.log('\- Welcome to the \"Mixed Messages\" Project'); 
 //Enter Birthday:
 function getSign() {
     let sign = '';
