@@ -1,6 +1,4 @@
 console.log('\- Welcome to the \"Mixed Messages\" Project');
-
-console.log('\- Welcome to the \"Mixed Messages\" Project');
  
 //Enter Birthday:
 function getSign() {
@@ -21,8 +19,7 @@ function getSign() {
         _Sagg : 'Sagittarius'
     }
 
-    console.log(signList._Gemin);
-
-    return sign;
+    sign = signList._Gemin
+    console.log(`Your sign is: ${sign}`)
 }
 getSign();
