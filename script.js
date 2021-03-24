@@ -24,9 +24,13 @@ function getSign(bMonth,bDayNum){
     //Birth Month too high/DayNumber
     if (bMonth > 12 || bDayNum > 31){
         console.log('Number(s) too large')
+
+        console.log(`bMonth is: ${bMonth}`)
+        console.log(`bDayNum is: ${bDayNum}`)
     }
     else{
         console.log('okay, okay')
+        
         console.log(`bMonth is: ${bMonth}`)
         console.log(`bDayNum is: ${bDayNum}`)
     }  
@@ -34,4 +38,4 @@ function getSign(bMonth,bDayNum){
     //console.log('- Your sign is: ' + signList._Gemin);
     //return sign;
 }
-getSign(6,15);
+getSign(13,32);
