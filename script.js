@@ -1,9 +1,11 @@
-console.log('\n\- Welcome to the \"Mixed Messages\" Project');
- 
-//Enter Birthday:
-function getSign() {
-    let sign = '';
+console.log('\- Welcome to the \"Mixed Messages\" Project'); 
+//Birthday Variables:
+let bMonth = 0;
+let bDayNum = 0;
 
+//Call 'getSign' function after saving USER-INPUT...
+function getSign(bMonth,bDayNum){
+    let sign = '';
     const signList = {
         _Cap : 'Capricorn',
         _Aqua : 'Aquarius',
@@ -19,7 +21,17 @@ function getSign() {
         _Sagg : 'Sagittarius'
     }
 
-    sign = signList._Gemin
-    console.log(`- Your sign is: ${sign}`)
+    //Birth Month too high/DayNumber
+    if (bMonth > 12 || bDayNum > 31){
+        console.log('Number(s) too large')
+    }
+    else{
+        console.log('okay, okay')
+        console.log(`bMonth is: ${bMonth}`)
+        console.log(`bDayNum is: ${bDayNum}`)
+    }  
+    
+    //console.log('- Your sign is: ' + signList._Gemin);
+    //return sign;
 }
-getSign();
+getSign(6,15);
