@@ -38,4 +38,4 @@ function getSign(bMonth,bDayNum){
     //console.log('- Your sign is: ' + signList._Gemin);
     //return sign;
 }
-getSign(10,32);
+getSign(10,24);
