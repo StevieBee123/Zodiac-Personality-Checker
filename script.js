@@ -28,14 +28,23 @@ function getSign(bMonth,bDayNum){
         console.log(`bMonth is: ${bMonth}`)
         console.log(`bDayNum is: ${bDayNum}`)
     }
-    else{
-        console.log('okay, okay')
+    else if (bMonth===6){        
+        console.log(`Your bMonth = ${bMonth}`)
+    } 
+    else {
+        console.log('***')
 
         console.log(`bMonth is: ${bMonth}`)
         console.log(`bDayNum is: ${bDayNum}`)
-    }  
-    
+    }
+
+
+
+
+
+
+
     //console.log('- Your sign is: ' + signList._Gemin);
     //return sign;
 }
-getSign(10,24);
+getSign(7,24);
