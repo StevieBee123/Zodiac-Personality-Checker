@@ -1,4 +1,4 @@
-console.log('\- Welcome to the \"Mixed Messages\" Project'); 
+console.log('\n\- Welcome to the \"Mixed Messages\" Project\n'); 
 //Birthday Variables:
 let bMonth = 0;
 let bDayNum = 0;
@@ -22,29 +22,40 @@ function getSign(bMonth,bDayNum){
     }
 
     //Birth Month too high/DayNumber
-    if (bMonth > 12 || bDayNum > 31){
-        console.log('Number(s) too large')
-
+    if(bMonth > 12 || bDayNum > 31){
+        console.log('One of the numbers you entered is too large. Try again.\n')
+    } else if(bMonth <= 0 || bDayNum <= 0){
+        console.log(`One of the numbers you entered is lower than zero \(${bMonth} or ${bDayNum}\). Try again.\n`)
+    } else if((bMonth == 12 && day >= 21) || (bDayNum == 2 && day <= 18)){
+        return zodiacSigns._Cap;
+    } else if((bMonth == 12 && day >= 21) || (bDayNum == 2 && day <= 18)){
+        return zodiacSigns._Aqua;
+    } else if((bMonth == 12 && day >= 21) || (bDayNum == 2 && day <= 18)){
+        return zodiacSigns._Cap;
+    } else if((bMonth == 12 && day >= 21) || (bDayNum == 2 && day <= 18)){
+        return zodiacSigns._Cap;
+    } else if((bMonth == 12 && day >= 21) || (bDayNum == 2 && day <= 18)){
+        return zodiacSigns._Cap;
+    } else if((bMonth == 12 && day >= 21) || (bDayNum == 2 && day <= 18)){
+        return zodiacSigns._Cap;
+    } else if((bMonth == 12 && day >= 21) || (bDayNum == 2 && day <= 18)){
+        return zodiacSigns._Cap;
+    } else if((bMonth == 12 && day >= 21) || (bDayNum == 2 && day <= 18)){
+        return zodiacSigns._Cap;
+    } else if((bMonth == 12 && day >= 21) || (bDayNum == 2 && day <= 18)){
+        return zodiacSigns._Cap;
+    } else if((bMonth == 12 && day >= 21) || (bDayNum == 2 && day <= 18)){
+        return zodiacSigns._Cap;
+    } else if((bMonth == 12 && day >= 21) || (bDayNum == 2 && day <= 18)){
+        return zodiacSigns._Cap;
+    } else if((bMonth == 12 && day >= 21) || (bDayNum == 2 && day <= 18)){
+        return zodiacSigns._Cap;
+    } else{
         console.log(`bMonth is: ${bMonth}`)
         console.log(`bDayNum is: ${bDayNum}`)
     }
-    else if (bMonth===6){        
-        console.log(`Your bMonth = ${bMonth}`)
-    } 
-    else {
-        console.log('***')
-
-        console.log(`bMonth is: ${bMonth}`)
-        console.log(`bDayNum is: ${bDayNum}`)
-    }
-
-
-
-
-
-
 
     //console.log('- Your sign is: ' + signList._Gemin);
     //return sign;
 }
-getSign(7,24);
+getSign(3,32);
