@@ -1,4 +1,5 @@
-console.log('\n\- Welcome to the \"Mixed Messages\" Project\n'); 
+console.log('\n\- Welcome to the \"Mixed Messages\" Project\n00000');
+console.log('Please enter your \'BirthMonth\' followed by the day of the month\: \n');
 //Birthday Variables:
 let bMonth = 0;
 let bDayNum = 0;
@@ -59,4 +60,36 @@ function getSign(bMonth,bDayNum){
     //console.log('- Your sign is: ' + signList._Gemin);
     //return sign;
 }
-console.log(`You are a\: ${getSign(1,8)}`);
+console.log(`You are a\: ${getSign(10,28)}`);
+//NEW FUNCTION '
+const getMood = (moodChoice)=>{
+    const mC = moodChoice; 
+
+    if(mC===h){
+        let arrHappyQuotes = [
+                'You’re off to great places, today is your day. Your mountain is waiting, so get on  your way.-Dr.Seuss',
+                'You always pass failure on the way to success.-Mickey Rooney/Actor',
+                'Only surround yourself with people who life you higher.-Oprah Winfrey',
+                'No one is perfect - that’s why pencils have erasers.-Wolfgang Riebe/Magician',
+                'It always seems impossible until it is done.”-Nelson Mandela/Political Leader',
+                'All your dreams can come true, if you have the courage to pursue them.”-Walt Disney',
+                'Keep your face to the sunshine and you cannot see a shadow.”-Helen Keller/Author',
+                'Once you replace negative thoughts with positive ones, you’ll start having positive results.”-Willie Nelson',
+                'It makes a big difference in your life when you stay positive.”-Ellen DeGeneres',
+                'It’s not whether you get knocked down, it’s whether you get up.”-Vince Lombardi'
+            ];
+    }
+    else if(mC===m){
+        let arrMoodyQuotes = [
+
+
+            ];
+    }
+    else if(mC===dontCare){
+        let arrDontCareQuotes = [
+
+
+
+        ];
+    }
+};
