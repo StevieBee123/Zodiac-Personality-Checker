@@ -67,16 +67,16 @@ const getMood = (moodChoice)=>{
 
     if(mC===h){
         let arrHappyQuotes = [
-                'You’re off to great places, today is your day. Your mountain is waiting, so get on  your way.-Dr.Seuss',
-                'You always pass failure on the way to success.-Mickey Rooney/Actor',
-                'Only surround yourself with people who life you higher.-Oprah Winfrey',
-                'No one is perfect - that’s why pencils have erasers.-Wolfgang Riebe/Magician',
-                'It always seems impossible until it is done.”-Nelson Mandela/Political Leader',
-                'All your dreams can come true, if you have the courage to pursue them.”-Walt Disney',
-                'Keep your face to the sunshine and you cannot see a shadow.”-Helen Keller/Author',
-                'Once you replace negative thoughts with positive ones, you’ll start having positive results.”-Willie Nelson',
-                'It makes a big difference in your life when you stay positive.”-Ellen DeGeneres',
-                'It’s not whether you get knocked down, it’s whether you get up.”-Vince Lombardi'
+                'You\’re off to great places\, today is your day\. Your mountain is waiting\, so get on  your way\.\-Dr\.Seuss',
+                'You always pass failure on the way to success\.\-Mickey Rooney/Actor',
+                'Only surround yourself with people who life you higher\.\-Oprah Winfrey',
+                'No one is perfect \- that\’s why pencils have erasers\.\-Wolfgang Riebe\/Magician',
+                'It always seems impossible until it is done\.\-Nelson Mandela\/Political Leader',
+                'All your dreams can come true\, if you have the courage to pursue them\.\”\-Walt Disney',
+                'Keep your face to the sunshine and you cannot see a shadow\.\”\-Helen Keller\/Author',
+                'Once you replace negative thoughts with positive ones\, you’ll start having positive results\.\”\-Willie Nelson',
+                'It makes a big difference in your life when you stay positive\.\-Ellen DeGeneres',
+                'It\’s not whether you get knocked down\, it\’s whether you get up\.\”\-Vince Lombardi'
             ];
     }
     else if(mC===m){
@@ -85,26 +85,26 @@ const getMood = (moodChoice)=>{
                 'Anybody can become angry \— that is easy\, but to be angry with the right person and to the right degree and at the right time and for the right purpose\, and in the right way — that is not within everybodys power and is not easy.”-Aristotle/Philosopher', 
                 'Bitterness is like cancer\. It eats upon the host\. But anger is like fire\. It burns it all clean\.\”\-Maya Angelou',
                 'When angry, count four. When very angry, swear\.\”\-Mark Twain\/Author',
-                'Anger, resentment and jealousy doesnt change the heart of others-- it only changes yours.”-Shannon Alder/auth',
-                'How much more grievous are the consequences of anger than the causes of it.”-Marcus Aurelius/Philosopher',
-                'Whoa, who peed in your Cheerios?”-Becca Fitzpatrick/Actress',
-                'There are two things a person should never be angry at, what they can help, and what they cannot.”-Plato ',
-                'Men in rage strike those that wish them best.”-Shakespeare/Author',
-                'Anger makes you smaller, while forgiveness forces you to grow beyond what you are.”-Cherie Carter-Scott'
+                'Anger\, resentment and jealousy doesnt change the heart of others\-\- it only changes yours\.\-Shannon Alder\/auth',
+                'How much more grievous are the consequences of anger than the causes of it\.\”\-Marcus Aurelius\/Philosopher',
+                'Whoa\, who peed in your Cheerios\?\”\-Becca Fitzpatrick\/Actress',
+                'There are two things a person should never be angry at\, what they can help\, and what they cannot\.\-Plato ',
+                'Men in rage strike those that wish them best\. \-Shakespeare\/Author',
+                'Anger makes you smaller\, while forgiveness forces you to grow beyond what you are\.\”\-Cherie Carter\-Scott'
             ];
     }
     else if(mC===dontCare){
         let arrDontCareQuotes = [
-            'A person is wise if he listens to millions of advice and doesnt implement any of it.”-Michael Bassey Johnson ',
-            'The rain that falls wherever it pleases. I want to be that rain.” -Marty Rubin',
-            'Real men dont dance to other peoples tune, instead, they play for others to dance.”-Michael Bassey Johnson',
-            'Fortune favors the nonchalant.”-Marty Rubin',
-            'He understood the code of his social class enough to affect an air of indifference about life.”-H.W. Brands',
-            'The ability to remain calm and focused in stressful situations is central to making positive decisions.”-Goldie Hawn',
-            'Be the light in the dark, be the calm in the storm and be at peace while at war.”-Michael Dolan',
-            'Let your soul stand cool and composed before a million universes.”-Walt Whitman',
-            'A calm mind helps our human intelligence to assess the situation realistically.”-Dalai Lama',
-            'Calm sailing doesn\'t come from calm waters\, it comes from having a good navigator\; a good crew and a good vessel\.-Anthony T. Hincks'
+                'A person is wise if he listens to millions of advice and doesnt implement any of it\.\”\-Michael Bassey Johnson ',
+                'The rain that falls wherever it pleases\. I want to be that rain\.\-Marty Rubin',
+                'Real men dont dance to other peoples tune\, instead\, they play for others to dance\.\-Michael Bassey Johnson',
+                'Fortune favors the nonchalant\.\-Marty Rubin',
+                'He understood the code of his social class enough to affect an air of indifference about life\.\-H\.W\. Brands',
+            'The ability to remain calm and focused in stressful situations is central to making positive decisions\.\-Goldie Hawn',
+            'Be the light in the dark\, be the calm in the storm and be at peace while at war\.\-Michael Dolan',
+            'Let your soul stand cool and composed before a million universes\.-Walt Whitman',
+            'A calm mind helps our human intelligence to assess the situation realistically\.\-Dalai Lama',
+            'Calm sailing doesn\'t come from calm waters\, it comes from having a good navigator\; a good crew and a good vessel\.\-Anthony T\. Hincks'
         ];
     }
 };
