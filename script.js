@@ -94,11 +94,11 @@ const getMood = (moodChoice)=>{
         'Real men dont dance to other peoples tune\, instead\, they play for others to dance\.\-Michael Bassey Johnson',
         'Fortune favors the nonchalant\.\-Marty Rubin',
         'He understood the code of his social class enough to affect an air of indifference about life\.\-H\.W\. Brands',
-    'The ability to remain calm and focused in stressful situations is central to making positive decisions\.\-Goldie Hawn',
-    'Be the light in the dark\, be the calm in the storm and be at peace while at war\.\-Michael Dolan',
-    'Let your soul stand cool and composed before a million universes\.-Walt Whitman',
-    'A calm mind helps our human intelligence to assess the situation realistically\.\-Dalai Lama',
-    'Calm sailing doesn\'t come from calm waters\, it comes from having a good navigator\; a good crew and a good vessel\.\-Anthony T\. Hincks'
+        'The ability to remain calm and focused in stressful situations is central to making positive decisions\.\-Goldie Hawn',
+        'Be the light in the dark\, be the calm in the storm and be at peace while at war\.\-Michael Dolan',
+        'Let your soul stand cool and composed before a million universes\.-Walt Whitman',
+        'A calm mind helps our human intelligence to assess the situation realistically\.\-Dalai Lama',
+        'Calm sailing doesn\'t come from calm waters\, it comes from having a good navigator\; a good crew and a good vessel\.\-Anthony T\. Hincks'
     ];
 
     if(mC===h){
@@ -113,24 +113,27 @@ const getMood = (moodChoice)=>{
     else{
         console.log('Please try again - Your choice was not selected.');
     }
-}//END getMood FUNCTION
+    //END USER-SELECTION PROCESS
+
+    //START QUOTE GENERATOR FUNCTIONS
+    function randomHappyQuote(){
+        let randNumber = Math.ceil(Math.random()*9);
+        let happyReturn = ''
+        happyReturn = arrHappyQuotes[randNumber];
+        console.log(happyReturn);
+
+        return happyReturn
+    }
+    function randomMoodyQuote(){
+        let moodyReturn = ''
 
 
-function randomHappyQuote(){
-    let happyReturn = ''
-
-
-    return happyReturn
-}
-function randomMoodyQuote(){
-    let moodyReturn = ''
-
-
-    return moodyReturn
-}
-function randomDontCareQuote(){
-let dontcareReturn = ''
+        return moodyReturn
+    }
+    function randomDontCareQuote(){
+        let dontcareReturn = ''
 
         
-    return dontcareReturn
-}
+        return dontcareReturn
+    }
+}//END getMoodFUNCTION
