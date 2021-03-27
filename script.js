@@ -60,9 +60,7 @@ function getSign(bMonth,bDayNum){
 //GET-SIGN CHECK BELOW
 console.log(`You are a\: ${getSign(10,28)}`);
 
-
-
-//START GET-MOOD FUNCTION
+//START getMood FUNCTION
 const getMood = (moodChoice)=>{
 
     const mC = moodChoice; 
@@ -115,17 +113,24 @@ const getMood = (moodChoice)=>{
     else{
         console.log('Please try again - Your choice was not selected.');
     }
+}//END getMood FUNCTION
 
-    function randomHappyQuote() {
-        let happyReturn = ''
-        return happyReturn
-    }
-    function randomMoodyQuote() {
-        let moodyReturn = '';
-        return moodyReturn;
-    }
-    function randomDontCareQuote() {
-        let dontcareReturn = '';
-        return dontcareReturn;
-    }
-};
+
+function randomHappyQuote(){
+    let happyReturn = ''
+
+
+    return happyReturn
+}
+function randomMoodyQuote(){
+    let moodyReturn = ''
+
+
+    return moodyReturn
+}
+function randomDontCareQuote(){
+let dontcareReturn = ''
+
+        
+    return dontcareReturn
+}
