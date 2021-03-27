@@ -58,11 +58,12 @@ function getSign(bMonth,bDayNum){
     }
 }//END GET-SIGN FUNCTION
 //GET-SIGN CHECK BELOW
-console.log(`You are a\: ${getSign(10,28)}`);
+console.log(`You are a\: ${getSign(1,8)}\n`);
 
 //START getMood FUNCTION
-const getMood = (moodChoice)=>{
-
+let h,m,dontCare = '';
+function getMood(moodChoice){
+    
     const mC = moodChoice; 
     let arrHappyQuotes = [
         'You\’re off to great places\, today is your day\. Your mountain is waiting\, so get on  your way\.\-Dr\.Seuss',
@@ -101,17 +102,17 @@ const getMood = (moodChoice)=>{
         'Calm sailing doesn\'t come from calm waters\, it comes from having a good navigator\; a good crew and a good vessel\.\-Anthony T\. Hincks'
     ];
 
-    if(mC===h){
+    if(mC==='h'){
         randomHappyQuote();
     }
-    else if(mC===m){
+    else if(mC==='m'){
         randomMoodyQuote();
     }
-    else if(mC===dontCare){
+    else if(mC==='dontCare'){
         randomDontCareQuote();
     }
     else{
-        console.log('Please try again - Your choice was not selected.');
+        console.log('Please try again -choice not accepted.');
     }
     //END USER-SELECTION PROCESS
 
@@ -120,7 +121,6 @@ const getMood = (moodChoice)=>{
         let randNumber = Math.ceil(Math.random()*9);
         let happyReturn = ''
         happyReturn = arrHappyQuotes[randNumber];
-        console.log(happyReturn);
 
         return happyReturn
     }
@@ -137,3 +137,4 @@ const getMood = (moodChoice)=>{
         return dontcareReturn
     }
 }//END getMoodFUNCTION
+console.log(getMood('h'));
