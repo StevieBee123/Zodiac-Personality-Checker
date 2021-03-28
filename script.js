@@ -90,16 +90,16 @@ function getMood(moodChoice){
         '\"Anger makes you smaller\, while forgiveness forces you to grow beyond what you are\.\” \-Cherie Carter\-Scott'
     ];
     let arrDontCareQuotes = [
-        'A person is wise if he listens to millions of advice and doesnt implement any of it\.\”  \-Michael Bassey Johnson',
-        'The rain that falls wherever it pleases\. I want to be that rain\.\" \-Marty Rubin',
-        'Real men dont dance to other peoples tune\, instead\, they play for others to dance\.\" \-Michael Bassey Johnson',
-        'Fortune favors the nonchalant\.\"\-Marty Rubin',
-        'He understood the code of his social class enough to affect an air of indifference about life\.\" \-H\.W\. Brands',
-        'The ability to remain calm and focused in stressful situations is central to making positive decisions\.\" \-Goldie Hawn',
-        'Be the light in the dark\, be the calm in the storm and be at peace while at war\.\" \-Michael Dolan',
-        'Let your soul stand cool and composed before a million universes\.\" -Walt Whitman',
-        'A calm mind helps our human intelligence to assess the situation realistically\.\" \-Dalai Lama',
-        'Calm sailing doesn\'t come from calm waters\, it comes from having a good navigator\; a good crew and a good vessel\.\" \-Anthony T\. Hincks'
+        '\"A person is wise if he listens to millions of advice and doesnt implement any of it\.\”  \-Michael Bassey Johnson',
+        '\"The rain that falls wherever it pleases\. I want to be that rain\.\" \-Marty Rubin',
+        '\"Real men dont dance to other peoples tune\, instead\, they play for others to dance\.\" \-Michael Bassey Johnson',
+        '\"Fortune favors the nonchalant\.\"\-Marty Rubin',
+        '\"He understood the code of his social class enough to affect an air of indifference about life\.\" \-H\.W\. Brands',
+        '\"The ability to remain calm and focused in stressful situations is central to making positive decisions\.\" \-Goldie Hawn',
+        '\"Be the light in the dark\, be the calm in the storm and be at peace while at war\.\" \-Michael Dolan',
+        '\"Let your soul stand cool and composed before a million universes\.\" -Walt Whitman',
+        '\"A calm mind helps our human intelligence to assess the situation realistically\.\" \-Dalai Lama',
+        '\"Calm sailing doesn\'t come from calm waters\, it comes from having a good navigator\; a good crew and a good vessel\.\" \-Anthony T\. Hincks'
     ];
 
     if(mC==h){
