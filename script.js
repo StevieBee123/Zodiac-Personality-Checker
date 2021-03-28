@@ -102,14 +102,17 @@ function getMood(moodChoice){
         'Calm sailing doesn\'t come from calm waters\, it comes from having a good navigator\; a good crew and a good vessel\.\-Anthony T\. Hincks'
     ];
 
-    if(mC==='h'){
+    if(mC===h){
         randomHappyQuote();
+        console.log('check happy');
     }
-    else if(mC==='m'){
+    else if(mC===m){
         randomMoodyQuote();
+        console.log('check moody');
     }
-    else if(mC==='dontCare'){
+    else if(mC===dontCare){
         randomDontCareQuote();
+        console.log('check Care');
     }
     else{
         console.log('Please try again -choice not accepted.');
@@ -118,11 +121,14 @@ function getMood(moodChoice){
 
     //START QUOTE GENERATOR FUNCTIONS
     function randomHappyQuote(){
-        let randNumber = Math.ceil(Math.random()*9);
-        let happyReturn = ''
-        happyReturn = arrHappyQuotes[randNumber];
+        console.log('function loading...')
+        let randNumber = Math.floor(Math.random()*10);
+        console.log(randNumber);
 
-        return happyReturn
+
+        //let happyReturn = '';
+        //happyReturn = arrHappyQuotes[randNumber];
+        //return happyReturn;
     }
     function randomMoodyQuote(){
         let moodyReturn = ''
@@ -137,4 +143,4 @@ function getMood(moodChoice){
         return dontcareReturn
     }
 }//END getMoodFUNCTION
-console.log(getMood('h'));
+console.log(getMood(h));
