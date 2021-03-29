@@ -61,7 +61,7 @@ function getSign(bMonth,bDayNum){
 console.log(`You are a\: ${getSign(1,8)}\n`);
 
 //START getMood FUNCTION
-let h,m,dontCare = '';
+
 function getMood(moodChoice){
     
     const mC = moodChoice; 
@@ -102,17 +102,14 @@ function getMood(moodChoice){
         '\"Calm sailing doesn\'t come from calm waters\, it comes from having a good navigator\; a good crew and a good vessel\.\" \-Anthony T\. Hincks'
     ];
 
-    if(mC==h){
+    if(mC===1){
         console.log(randomHappyQuote());
-        
     }
-    else if(mC==m){
+    else if(mC===2){
         randomMoodyQuote();
-        console.log('check moody');
     }
-    else if(mC==dontCare){
+    else if(mC===3){
         randomDontCareQuote();
-        console.log('check Care');
     }
     else{
         console.log('Please try again -choice not accepted.');
@@ -120,28 +117,22 @@ function getMood(moodChoice){
     //END USER-SELECTION PROCESS
 
     //START QUOTE GENERATOR FUNCTIONS
-    function randomHappyQuote(){
-        console.log('function loading...')
-        let randNumber = Math.floor(Math.random()*10);
-        //console.log(randNumber);
-        //console.log(arrHappyQuotes[randNumber]);
-        let happyReturn = arrHappyQuotes[randNumber];
-        //console.log('HappyReturn = ' + happyReturn)
-        //happyReturn = arrHappyQuotes[randNumber];
-        
-        return happyReturn;
-    }
     function randomMoodyQuote(){
-        let moodyReturn = ''
-
-
-        return moodyReturn
+        let randNumber2 = Math.floor(Math.random()*10)
+        let moodyReturn = arrMoodyQuotes[randNumber2]
+        console.log(moodyReturn)
     }
-    function randomDontCareQuote(){
-        let dontcareReturn = ''
 
-        
-        return dontcareReturn
+    function randomDontCareQuote(){
+        let randNumber3 = Math.floor(Math.random()*10);
+        let dontcareReturn = arrDontCareQuotes[randNumber3]
+        console.log(dontcareReturn);
+    }
+
+    function randomHappyQuote(){
+        let randNumber1 = Math.floor(Math.random()*10)
+        let happyReturn = arrHappyQuotes[randNumber1]
+        console.log(happyReturn)
     }
 }//END getMoodFUNCTION
-console.log(getMood(h));
+getMood(3);
