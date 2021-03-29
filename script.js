@@ -1,6 +1,6 @@
 //GREETING
-console.log('\n\- Welcome to the \"Mixed Messages\" Project');
-console.log('Please enter your \'BirthMonth\' followed by the day of the month\: \n');
+console.log('\n\- Welcome to the \"Zodiac-Personality-Checker\(Mixed\-messages\)\" Project');
+console.log('Please enter your \'birth month\' followed by your birth day\n');
 //Birthday Variables:
 let bMonth = 0;
 let bDayNum = 0;
@@ -111,7 +111,8 @@ function getMood(moodChoice){
         randomDontCareQuote();
     }
     else{
-        console.log('Please try again -choice not accepted.');
+        console.log('Try again - your MOOD choice was not accepted.')
+        console.log('Please enter a number from 1-3\:    1 \= \(Happy generally\) \, 2 \= \(Moody typically\) \,  3 \= \(Impartial\/DontCare normally\)')
     }
     //END USER-SELECTION PROCESS
 
@@ -119,19 +120,19 @@ function getMood(moodChoice){
     function randomMoodyQuote(){
         let randNumber2 = Math.floor(Math.random()*10)
         let moodyReturn = arrMoodyQuotes[randNumber2]
-        console.log('Based on your \(Moody\) selection, your quote is\: \n' + moodyReturn)
+        console.log('Based on your \(Moody\) selection, your randomly\-generated quote is\: \n' + moodyReturn)
     }
 
     function randomDontCareQuote(){
         let randNumber3 = Math.floor(Math.random()*10);
         let dontcareReturn = arrDontCareQuotes[randNumber3]
-        console.log('Based on your \(Impartial\\Don\'tCare\) selection, your quote is\: \n' + dontcareReturn)
+        console.log('Based on your \(Impartial\\Don\'tCare\) selection, your randomly\-generated quote is\: \n' + dontcareReturn)
     }
 
     function randomHappyQuote(){
         let randNumber1 = Math.floor(Math.random()*10)
         let happyReturn = arrHappyQuotes[randNumber1]
-        console.log('Based on your \(Happy\) selection, your quote is\: \n' + happyReturn)
+        console.log('Based on your \(Happy\) selection, your randomly\-generated quote is\: \n' + happyReturn)
     }
 }//END getMood function
 
@@ -167,15 +168,25 @@ const getColorChoice = (choice)=>{
             //            break;
         }
     }
-    //else{
-        //console.log('Please enter: \'r\'\, \'b\'\,\'g\'\, or \'y\'')
-    //}
+    else{
+        console.log('Please enter a number from 1-4\: \'1\' for \(Red\)\, \'2\' for \(Blue\)\,\'3\' for \(Green\)\, or \'4\' for \(Yellow\)')
+        //console.log('Please enter: \'r\'\, \'b\'\,\'g\'\, or \'y\' for your ')
+    }
 }
-//***getSign - Enter birthmonth -> followed by birth day number
-console.log(`${getSign(6,15)}\'s are usually described as\: `)
-console.log(`${getColorChoice(3)}\.\n`)
-console.log(getMood(3));
+console.log(`${getSign(1,8)}\'s are usually described as\: `)
+console.log(`${getColorChoice(2)}\.\n`)
+console.log(getMood(1));
+/*Output:
 
-//getMood(3);
-//***getMood(?) 1 = (Happy moodchoice) , 2 = (Moody moodchoice) ,  3 = (Impartial/DontCare moodchoice)
-//***getColorChoice(?) */ 1 = Red - 2 = Blue - 3 = Green - 4 = Yellow
+- Welcome to the "Zodiac-Personality-Checker(Mixed-messages)" Project
+Please enter your 'birth month' followed by your birth day
+
+Capricorn's are usually described as:
+Cautious, Precise, Deliberate, Questioning, Formal
+undefined.
+
+Based on your (Happy) selection, your randomly-generated quote is:
+"You always pass failure on the way to success." -Mickey Rooney/Actor
+undefined
+
+*/
