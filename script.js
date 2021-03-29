@@ -1,5 +1,5 @@
 //GREETING
-console.log('\n\- Welcome to the \"Mixed Messages\" Project\n');
+console.log('\n\- Welcome to the \"Mixed Messages\" Project');
 console.log('Please enter your \'BirthMonth\' followed by the day of the month\: \n');
 //Birthday Variables:
 let bMonth = 0;
@@ -58,10 +58,9 @@ function getSign(bMonth,bDayNum){
     }
 }//END GET-SIGN FUNCTION
 //GET-SIGN CHECK BELOW
-console.log(`You are a\: ${getSign(1,8)}\n`);
 
 //START getMood FUNCTION
-
+//*** getMood(?) 1 = (Happy moodchoice) , 2 = (Moody moodchoice) ,  3 = (Impartial/DontCare moodchoice)
 function getMood(moodChoice){
     
     const mC = moodChoice; 
@@ -103,7 +102,7 @@ function getMood(moodChoice){
     ];
 
     if(mC===1){
-        console.log(randomHappyQuote());
+        randomHappyQuote();
     }
     else if(mC===2){
         randomMoodyQuote();
@@ -120,19 +119,63 @@ function getMood(moodChoice){
     function randomMoodyQuote(){
         let randNumber2 = Math.floor(Math.random()*10)
         let moodyReturn = arrMoodyQuotes[randNumber2]
-        console.log(moodyReturn)
+        console.log('Based on your \(Moody\) selection, your quote is\: \n' + moodyReturn)
     }
 
     function randomDontCareQuote(){
         let randNumber3 = Math.floor(Math.random()*10);
         let dontcareReturn = arrDontCareQuotes[randNumber3]
-        console.log(dontcareReturn);
+        console.log('Based on your \(Impartial\\Don\'tCare\) selection, your quote is\: \n' + dontcareReturn)
     }
 
     function randomHappyQuote(){
         let randNumber1 = Math.floor(Math.random()*10)
         let happyReturn = arrHappyQuotes[randNumber1]
-        console.log(happyReturn)
+        console.log('Based on your \(Happy\) selection, your quote is\: \n' + happyReturn)
     }
-}//END getMoodFUNCTION
-getMood(3);
+}//END getMood function
+
+let b = '';
+let l = '';
+//START COLOR SELECTION OBJECT FUNCTION
+//***getColorChoice(?) */ 1 = Red - 2 = Blue - 3 = Green - 4 = Yellow
+const getColorChoice = (choice)=>{
+    let colorPick = choice;
+    const colorChoice = {
+        _red : 'Competitive, Demanding, Determined, Purposeful, Strong-willed',
+        _blue : 'Cautious, Precise, Deliberate, Questioning, Formal',
+        _green : 'Caring, Encouraging, Sharing, Patient, Relaxed',
+        _yellow : 'Sociable, Dynamic, Demonstrative, Enthusiastic, Persuasive'
+    }
+   
+
+    if((colorPick===1) || (colorPick===2) || (colorPick===3) || (colorPick===4)){
+        switch (colorPick) {
+            case 1:
+                        console.log(`${colorChoice._red}`);
+                        break;
+            case 2:
+                        console.log(`${colorChoice._blue}`);
+                        break;
+            case 3:
+                        console.log(`${colorChoice._green}`);
+                        break;
+            case 4:
+                            console.log(`${colorChoice._yellow}`);
+                            break;
+            //default:
+            //            break;
+        }
+    }
+    //else{
+        //console.log('Please enter: \'r\'\, \'b\'\,\'g\'\, or \'y\'')
+    //}
+}
+//***getSign - Enter birthmonth -> followed by birth day number
+console.log(`${getSign(6,15)}\'s are usually described as\: `)
+console.log(`${getColorChoice(3)}\.\n`)
+console.log(getMood(3));
+
+//getMood(3);
+//***getMood(?) 1 = (Happy moodchoice) , 2 = (Moody moodchoice) ,  3 = (Impartial/DontCare moodchoice)
+//***getColorChoice(?) */ 1 = Red - 2 = Blue - 3 = Green - 4 = Yellow
