@@ -136,8 +136,6 @@ function getMood(moodChoice){
     }
 }//END getMood function
 
-//let b = '';
-//let l = '';
 //START COLOR SELECTION OBJECT FUNCTION
 //***getColorChoice(?) */ 1 = Red - 2 = Blue - 3 = Green - 4 = Yellow
 const getColorChoice = (choice)=>{

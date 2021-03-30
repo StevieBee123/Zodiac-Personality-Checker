@@ -1,4 +1,4 @@
-# New Zodiac-Personality-Checker
+# Zodiac-Personality-Checker
 
 ## Project Objectives
 
