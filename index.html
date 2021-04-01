@@ -7,27 +7,28 @@
 </head>
 
 <body>
-<h1>Zodiac-Personality-Checker</h1>
-<h2>Welcome to the Zodiac-Personality-Checker(Mixed-messages Project)</h2>
+    <h1>Zodiac-Personality-Checker</h1>
+    <h2>Welcome to the Zodiac-Personality-Checker(Mixed-messages Project)</h2>
+
+
+    <!--console.log(`${getSign(1,8)}\'s are usually described as\: `)-->
+    <p>Hello</p><p id="monthDisplay"></p>
+
+    Please enter your birth month: <input type="number" name="a" id="a"><br> 
+    b: <input type="number" name="b" id="b"><br>
+    <button onclick="getSign(bMonth,bDayNum)"> Enter </button>
 
 
 
+    <!--BEGIN getSign() script/function -->
+    <script>
+        let bMonth = prompt('');
+        let bDayNum = prompt('Please enter your the day on which you were born');
+    
+        document.getElementById("monthDisplay").innerHTML = sum; 
+    </script>
+    <!--END getSign() script/function -->
 
 
-
-
-
-
-
-<div id = 'ageInput'>
-
-
-</div>
-
-
-<script src ="script.js">
-
-
- </script>
 </body>
 </html>

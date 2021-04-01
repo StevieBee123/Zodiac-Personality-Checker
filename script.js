@@ -1,5 +1,3 @@
-//GREETING
-console.log('\n\- Welcome to the \"Zodiac-Personality-Checker\(Mixed\-messages\)\" Project');
 console.log('Please enter your \'birth month\' followed by your birth day\n');
 //Birthday Variables:
 let bMonth = 0;

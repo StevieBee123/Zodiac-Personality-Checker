@@ -4,3 +4,13 @@ h1, h2 {
     text-align: center;
 }
 
+body {
+    color:crimson;
+    text-align: center;
+    font-size: large;
+}
+
+p {
+    font-size: larger;
+    font-weight: 800;
+}
