@@ -12,20 +12,70 @@
 
 
     <!--console.log(`${getSign(1,8)}\'s are usually described as\: `)-->
-    <p>Hello</p><p id="monthDisplay"></p>
+    <p id="monthDisplay">CheckCheck</p>
 
-    Please enter your birth month: <input type="number" name="a" id="a"><br> 
-    b: <input type="number" name="b" id="b"><br>
-    <button onclick="getSign(bMonth,bDayNum)"> Enter </button>
-
-
-
+    Please enter your birth month: <input type="number" id="bMonth"><br> 
+    Please enter your the day on which you were born: <input type="number" id="bDayNum"><br>
+    <button onclick="getSign(document.getElementById('bMonth').value, 
+                document.getElementById('bDayNum').value)"> Enter 
+    </button>
+    
     <!--BEGIN getSign() script/function -->
     <script>
-        let bMonth = prompt('');
-        let bDayNum = prompt('Please enter your the day on which you were born');
-    
-        document.getElementById("monthDisplay").innerHTML = sum; 
+          
+        function getSign(bMonth,bDayNum){
+          const signList = {
+              _Cap : 'Capricorn',
+              _Aqua : 'Aquarius',
+              _Pisc : 'Pisces',
+              _Ari : 'Aries',
+              _Taur : 'Taurus',
+              _Gemin : 'Gemini',
+              _Cancc : 'Cancer',
+              _Leo : 'Leo',
+              _Vgo : 'Virgo',
+              _Lib : 'Libra',
+              _Scorp : 'Scorpio',
+              _Sagg : 'Sagittarius'
+          }
+    //BirthMonth-DayNumber
+          let temp = ''
+          if(bMonth > 12 || bDayNum > 31){
+              alert(`One of the numbers you entered is too large \(${bMonth} or ${bDayNum}\). Try again.\n`)
+          } else if(bMonth <= 0 || bDayNum <= 0){
+              alert(`One of the numbers you entered is lower than zero \(${bMonth} or ${bDayNum}\). Try again.\n`)
+              //document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
+
+          }  else if((bMonth == 12 && bDayNum >= 21) || (bMonth == 1 && bDayNum <= 19)){
+                temp = signList._Cap;
+                document.getElementById('monthDisplay') = "huh"
+
+          } else if((bMonth == 1 && bDayNum >= 19) || (bMonth == 2 && bDayNum <= 18)){
+                document.getElementById('monthDisplay') = signList._Aqua;
+          } else if((bMonth == 2 && bDayNum >= 18) || (bMonth == 3 && bDayNum <= 20)){
+                document.getElementById('monthDisplay') = signList._Pisc;
+          } else if((bMonth == 3 && bDayNum >= 20) || (bMonth == 4 && bDayNum <= 19)){
+                document.getElementById('monthDisplay') = signList._Ari;
+          } else if((bMonth == 4 && bDayNum >= 19) || (bMonth == 5 && bDayNum <= 20)){
+                document.getElementById('monthDisplay') = signList._Taur;
+          } else if((bMonth == 5 && bDayNum >= 20) || (bMonth == 6 && bDayNum <= 20)){
+                document.getElementById('monthDisplay') = signList._Gemin;
+          } else if((bMonth == 6 && bDayNum >= 20) || (bMonth == 7 && bDayNum <= 22)){
+                document.getElementById('monthDisplay') = signList._Cancc;
+          } else if((bMonth == 7 && bDayNum >= 22) || (bMonth == 8 && bDayNum <= 22)){
+                document.getElementById('monthDisplay') = signList._Leo;
+          } else if((bMonth == 8 && bDayNum >= 22) || (bMonth == 9 && bDayNum <= 22)){
+                document.getElementById('monthDisplay') = signList._Vgo;
+          } else if((bMonth == 9 && bDayNum >= 22) || (bMonth == 10 && bDayNum <= 22)){
+                document.getElementById('monthDisplay') = signList._Lib;
+          } else if((bMonth == 10 && bDayNum >= 22) || (bMonth == 11 && bDayNum <= 21)){
+                document.getElementById('monthDisplay') = signList._Scorp;
+          } else if((bMonth == 11 && bDayNum >= 21) || (bMonth == 12 && bDayNum <= 21)){
+                document.getElementById('monthDisplay') = signList._Sagg;
+          } else{
+              document.getElementById('monthDisplay') = alert('Your number not accepted')
+          }
+        }//END GET-SIGN FUNCTION 
     </script>
     <!--END getSign() script/function -->
 

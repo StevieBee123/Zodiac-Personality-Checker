@@ -2,6 +2,35 @@ console.log('Please enter your \'birth month\' followed by your birth day\n');
 //Birthday Variables:
 let bMonth = 0;
 let bDayNum = 0;
+
+const signClassObject = {
+    setMonth(bMonth){
+        let month = bMonth;
+    },
+    setDay(bDayNum){
+        let day = bDayNum;
+    },
+    getMonth(){
+        let monthReturn = this.month;
+        return monthReturn;
+    },
+    getDay(){
+        let dayReturn = this.day;
+        return dayReturn;
+    },
+    setFullBday(){
+        let month2 = this.getMonth;
+        let dayNumber2 = this.getDay;
+
+        let fullBday =  month2 + dayNumber2;
+        return fullBday;
+    }
+}
+signClassObject.setMonth(1);
+signClassObject.setDay(8);
+console.log(signClassObject.setFullBday());
+//ABOVE (setFullBday) function not working properly
+
 //START GET-SIGN FUNCTION
 function getSign(bMonth,bDayNum){
     let sign = '';
@@ -115,22 +144,22 @@ function getMood(moodChoice){
     //END USER-SELECTION PROCESS
 
     //START QUOTE GENERATOR FUNCTIONS
-    function randomMoodyQuote(){
-        let randNumber2 = Math.floor(Math.random()*10)
-        let moodyReturn = arrMoodyQuotes[randNumber2]
-        console.log('Based on your \(Moody\) selection, your randomly\-generated quote is\: \n' + moodyReturn)
-    }
-
-    function randomDontCareQuote(){
-        let randNumber3 = Math.floor(Math.random()*10);
-        let dontcareReturn = arrDontCareQuotes[randNumber3]
-        console.log('Based on your \(Impartial\\Don\'tCare\) selection, your randomly\-generated quote is\: \n' + dontcareReturn)
+    function randomNumbGenerator(){
+        let randNumber = Math.floor(Math.random()*10)
+        return randNumber
     }
 
     function randomHappyQuote(){
-        let randNumber1 = Math.floor(Math.random()*10)
-        let happyReturn = arrHappyQuotes[randNumber1]
+        let happyReturn = arrHappyQuotes[randomNumbGenerator()]
         console.log('Based on your \(Happy\) selection, your randomly\-generated quote is\: \n' + happyReturn)
+    }
+    function randomMoodyQuote(){
+        let moodyReturn = arrMoodyQuotes[randomNumbGenerator()]
+        console.log('Based on your \(Moody\) selection, your randomly\-generated quote is\: \n' + moodyReturn)
+    }
+    function randomDontCareQuote(){
+        let dontcareReturn = arrDontCareQuotes[randomNumbGenerator()]
+        console.log('Based on your \(Impartial\\Don\'tCare\) selection, your randomly\-generated quote is\: \n' + dontcareReturn)
     }
 }//END getMood function
 
@@ -169,9 +198,9 @@ const getColorChoice = (choice)=>{
         //console.log('Please enter: \'r\'\, \'b\'\,\'g\'\, or \'y\' for your ')
     }
 }
-console.log(`${getSign(1,8)}\'s are usually described as\: `)
-console.log(`${getColorChoice(2)}\.\n`)
-console.log(getMood(1));
+//console.log(`${getSign(1,8)}\'s are usually described as\: `)
+//console.log(`${getColorChoice(2)}\.\n`)
+//console.log(getMood(1));
 /*Output:
 
 - Welcome to the "Zodiac-Personality-Checker(Mixed-messages)" Project
