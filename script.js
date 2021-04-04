@@ -49,13 +49,19 @@ function getSign(bMonth,bDayNum){
         _Sagg : 'Sagittarius'
     }
     //BirthMonth-DayNumber
-    if(bMonth > 12 || bDayNum > 31){
-        console.log(`One of the numbers you entered is too large \(${bMonth} or ${bDayNum}\). Try again.\n`)
-    } else if(bMonth <= 0 || bDayNum <= 0){
-        console.log(`One of the numbers you entered is lower than zero \(${bMonth} or ${bDayNum}\). Try again.\n`)
+        if(bMonth > 12){
+        console.log(`\(${bMonth} - is larger than 12. Try again.\n`)
+    }   else if(bDayNum > 31){
+        console.log(`\(${bDayNum} - is larger than 31. Try again.\n`)
+    }   else if(bMonth <= 0){
+        console.log(`\(${bMonth} - is less than 0 Try again.\n`)
+    }   else if(bDayNum <= 0){
+        console.log(`\(${bDayNum} - is less than 0 Try again.\n`)
+    }
     
     
-    }  else if((bMonth == 12 && bDayNum >= 21) || (bMonth == 1 && bDayNum <= 19)){
+    
+    else if((bMonth == 12 && bDayNum >= 21) || (bMonth == 1 && bDayNum <= 19)){
         return signList._Cap;
     } else if((bMonth == 1 && bDayNum >= 19) || (bMonth == 2 && bDayNum <= 18)){
         return signList._Aqua;
